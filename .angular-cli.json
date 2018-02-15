@@ -15,8 +15,36 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": ["styles.css"],
-      "scripts": [],
+      "styles": [
+      "./assets/css/bootstrap.css",
+      "./assets/css/font-awesome.css",
+      "./assets/css/animate.css",
+      "./assets/css/owl.carousel.css",
+      "./assets/css/hover.css",
+      "./assets/css/lightbox.css",
+      "./assets/css/normalize.css",
+      "./assets/css/slicknav.css",
+      "./assets/css/main.css",
+      "./assets/css/responsive.css"
+      ],
+      "scripts": [
+        "./assets/js/vendor/modernizr-3.5.0.js",
+        "./assets/js/vendor/jquery-3.2.1.js",
+        "./assets/js/bootstrap.js",
+        "./assets/js/jquery.sticky.js",        
+        "./assets/js/owl.carousel.js",
+        "./assets/js/jarallax.js",
+        "./assets/js/jquery.waypoints.js",
+        "./assets/js/jquery.barfiller.js",
+        "./assets/js/jquery.countdown.js",
+        "./assets/js/jquery.scrollUp.js",
+        "./assets/js/isotope.js",
+        "./assets/js/lightbox.js",
+        "./assets/js/slicknav.js",
+        "./assets/js/plugins.js",
+        "./assets/js/main.js"
+
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

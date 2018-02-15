@@ -6,6 +6,7 @@ import { ArticleCommentComponent } from './article-comment.component';
 import { ArticleResolver } from './article-resolver.service';
 import { MarkdownPipe } from './markdown.pipe';
 import { SharedModule } from '../shared';
+import { NoAuthGuard } from '../auth/no-auth-guard.service';
 
 const articleRouting: ModuleWithProviders = RouterModule.forChild([
   {

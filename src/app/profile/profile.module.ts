@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile.component';
 import { ProfileFavoritesComponent } from './profile-favorites.component';
 import { ProfileResolver } from './profile-resolver.service';
 import { SharedModule } from '../shared';
+import { NoAuthGuard } from '../auth/no-auth-guard.service';
 
 const profileRouting: ModuleWithProviders = RouterModule.forChild([
   {
