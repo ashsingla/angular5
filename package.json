@@ -4,15 +4,26 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "rimraf": "rimraf",
+    "prestart": "npm install",
     "start": "node server.js",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint --force",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "start:hmr": "ng serve --hmr",
+    "start:aot": "ng serve --aot",
+    "start:prod": "ng serve --prod",
+    "start:prod:aot": "ng serve --prod --aot",
+    "build": "npm run clean:dist && ng build",
+    "build:prod": "npm run build -- --prod",
+    "build:prod:aot": "npm run build:prod -- --aot",
+    "build:ci": "npm run build:prod && npm run build:prod:aot",
+    "lint": "ng lint",
+    "lint:styles": "stylelint ./src/app/**/*.scss",
+    "lint:ci": "npm run lint && npm run lint:styles",
+    "clean": "npm cache clean && npm run rimraf -- node_modules doc typings coverage dist",
+    "clean:dist": "npm run rimraf -- dist",
+    "clean:coverage": "npm run rimraf -- coverage"
   },
   "pre-commit": [
-    "lint"
+    
   ],
   "private": true,
   "dependencies": {
