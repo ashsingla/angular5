@@ -10,7 +10,7 @@
     "test": "ng serve -o",
     "start:hmr": "ng serve --hmr",
     "start:aot": "ng serve --aot",
-    "start:prod": "npm run build:prod -- --aot && node server.js --prod",
+    "start:prod": "npm install && npm run build:prod -- --aot && node server.js --prod",
     "start:prod:aot": "ng serve --prod --aot",
     "build": "npm run clean:dist && ng build",
     "build:prod": "npm run build -- --prod",
