@@ -23,9 +23,11 @@ import {
   SharedModule,
   TagsService,
   UserService,
-  HttpTokenInterceptor
+  HttpTokenInterceptor,
+  
 } from './shared';
 import { AboutComponent } from './NGO/about/about.component';
+import { CommonService } from './shared/common/common.service';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([]);
 
@@ -56,7 +58,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([]);
     JwtService,
     ProfilesService,
     TagsService,
-    UserService
+    UserService,
+    CommonService
   ],
   bootstrap: [AppComponent]
 })

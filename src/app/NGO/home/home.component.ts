@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonService } from '../../shared/common/common.service';
 
 //import { ArticleListConfig, TagsService, UserService } from '../shared';
 
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit {
     //private router: Router,
     //private tagsService: TagsService,
     //private userService: UserService
+    private commonService: CommonService
   ) {}
 
   // isAuthenticated: boolean;
@@ -24,6 +26,7 @@ export class HomeComponent implements OnInit {
   // tagsLoaded = false;
 
   ngOnInit() {
+    this.commonService.mainSlider();
   //   this.userService.isAuthenticated.subscribe(
   //     (authenticated) => {
   //       this.isAuthenticated = authenticated;
