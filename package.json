@@ -6,7 +6,7 @@
     "ng": "ng",
     "rimraf": "rimraf",
     "prestart": "npm install",
-    "start": "npm run build:prod -- --aot && node server.js",
+    "start": "node server.js",
     "test": "ng serve -o",
     "start:hmr": "ng serve --hmr",
     "start:aot": "ng serve --aot",
